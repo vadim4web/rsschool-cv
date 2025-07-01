@@ -8,8 +8,8 @@
   </span>
 </h1>
 
-<address style="font-style: normal;">
-  <table style="border-collapse: collapse; margin-left: auto;">
+<p align="right">
+  <table style="border-collapse: collapse;">
     <tr>
       <td><strong>Location:</strong></td>
       <td style="text-align: right;">Ukraine, Kyiv region</td>
@@ -27,7 +27,7 @@
       <td style="text-align: right;"><a href="https://github.com/vadim4web">@vadim4web</a></td>
     </tr>
   </table>
-</address>
+</p>
 
 ## About Me
 
