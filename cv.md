@@ -8,8 +8,8 @@
   </span>
 </h1>
 
-<address style="font-style: normal; display: flex; justify-content: end;">
-  <table style="border-collapse: collapse;">
+<address style="font-style: normal;">
+  <table style="border-collapse: collapse; margin-left: auto;">
     <tr>
       <td><strong>Location:</strong></td>
       <td style="text-align: right;">Ukraine, Kyiv region</td>
