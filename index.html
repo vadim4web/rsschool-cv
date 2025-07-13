@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSschool-CV-HTML</title>
+  <link rel="icon" href="https://rs.school/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="https://rs.school/favicon.png" type="image/png">
+  <link rel="icon" href="https://rs.school/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <!-- Prism.js CSS theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <!-- Prism.js core library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" defer></script>
+  <!-- Prism language support for JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js" defer></script>
+
+</head>
+
+<body>
+  <h1>
+    <span>rsschool-cv-html</span>
+    <span>Vadim Chervoniak</span>
+  </h1>
+
+  <section id="contacts">
+    <table style="border-collapse: collapse;">
+      <tr>
+        <td><strong>Location:</strong></td>
+        <td style="text-align: right;">Ukraine, Kyiv region</td>
+      </tr>
+      <tr>
+        <td><strong>Phone:</strong></td>
+        <td style="text-align: right;">+380-933-789-883</td>
+      </tr>
+      <tr>
+        <td><strong>Email:</strong></td>
+        <td style="text-align: right;">vadim4web@gmail.com</td>
+      </tr>
+      <tr>
+        <td><strong>GitHub:</strong></td>
+        <td style="text-align: right;"><a href="https://github.com/vadim4web">@vadim4web</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a 37 y/o full-stack developer from Ukraine with focus on Vue, Nuxt, React, Node.js, and a polyglot in modern web technologies.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Frontend:</strong> Vue, React, JavaScript/TypeScript, HTML5, CSS3/SCSS</li>
+      <li><strong>Backend:</strong> Nuxt.js, Node.js, PHP, Python</li>
+      <li><strong>Databases & APIs:</strong> SQL, RESTful APIs, GraphQL</li>
+      <li><strong>Tools & DevOps:</strong> Git, Bash, NPM, Google Cloud Platform (GCP), AWS</li>
+    </ul>
+  </section>
+
+  <section id="code">
+    <h2><a href="https://www.codewars.com/kata/reviews/541c8b5e7e4b4c61e2000149/groups/6730adba30786694b28816ab">Code example</a></h2>
+    <pre><code class="language-javascript">
+function digitalRoot(n) {
+  // Base case: if n is a single-digit number, return n
+  if (n < 10) {
+    return n;
+  } else {
+    // Calculate the sum of the digits
+    const sum = (n + '').split('').reduce((acc, cur) => acc + +cur, 0);
+    // Recursive call with the new sum
+    return digitalRoot(sum);
+  }
+}
+    </code></pre>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <p><code>December 2022 - June 2023</code><br>
+      <strong>Mate academy</strong><br>
+      <em>Full stack Software Development Course</em><br>
+      Focused on JavaScript, HTML, CSS, React, Node.js, and more
+    </p>
+
+    <p><code>March 2021 - June 2021</code><br>
+      <strong>EPAM University</strong><br>
+      <em>Front-end Spring Course</em><br>
+      Studied Git, CSS (including Flexbox and Grid), JavaScript, DOM, and Object-Oriented Programming
+    </p>
+
+    <p><code>August 2005 - July 2010</code><br>
+      <strong>Chernivtsi National University</strong><br>
+      <em>Department of Applied Physics and Computer Sciences</em><br>
+      Bachelor’s degree in Applied Physics & Computer Science
+    </p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>2025: <em>Successfully rewrote and redeployed a website within 24 hours</em></li>
+      <li>2023: <em>Mastered touch typing, achieving 30 WPM within a month</em></li>
+      <li>2020: <em>Launched my first full-stack application using Python and JavaScript</em></li>
+      <li>2003: <em>Earned money during school breaks to buy my first personal computer</em></li>
+    </ul>
+  </section>
+
+  <section id="resources">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="https://htmlbook.online">htmlbook.online</a></li>
+      <li><a href="https://javascript.info">javascript.info</a></li>
+      <li><a href="https://cs50.harvard.edu">cs50.harvard.edu</a></li>
+      <li><a href="https://pythoninstitute.org">pythoninstitute.org</a></li>
+      <li><a href="https://aws.amazon.com">aws.amazon.com</a></li>
+      <li><a href="https://cloud.google.com">cloud.google.com</a></li>
+      <li><a href="https://learn.microsoft.com">learn.microsoft.com</a></li>
+      <li><a href="https://freecodecamp.org">freecodecamp.org</a></li>
+      <li><a href="https://w3schools.com">w3schools.com</a></li>
+      <li><a href="https://vueschool.io">vueschool.io</a></li>
+      <li><a href="https://codewars.com">codewars.com</a></li>
+      <li><a href="https://cssbattle.dev">cssbattle.dev</a></li>
+      <li><a href="https://leetcode.com">leetcode.com</a></li>
+      <li><a href="https://youtube.com">youtube.com</a></li>
+    </ul>
+  </section>
+
+  <script src="https:///prismjs@v1.x/components/prism-core.min.js"></script>
+  <script src="https:///prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>
