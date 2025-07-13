@@ -107,3 +107,7 @@ content: '\2192' ' ';
 #education {}
 #education {}
 #resources {} */
+
+.right-align {
+  text-align: right;
+}
