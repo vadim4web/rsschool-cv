@@ -1,9 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/konstant-grotesk');
 
 :root {
-  font-family: 'Konstant Grotesk', sans-serif;
   --silver-sand: #BFC1C2;
   --coal-black: #161616;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
@@ -82,6 +85,12 @@ a::after {
 
 a:hover::after {
   width: 100%;
+}
+
+h1,
+h2,
+#contacts a {
+  font-family: 'Konstant Grotesk', sans-serif;
 }
 
 h2 {
@@ -186,6 +195,7 @@ main {
   right: 0;
   top: 0;
   content: attr(data-value);
+  text-transform: uppercase;
 }
 
 footer {
