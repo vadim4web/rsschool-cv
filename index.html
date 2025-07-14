@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vadim Chervoniak | Full Stack Developer</title>
+    <link rel="shortcut icon" href="https://vadim4web.github.io/favicon_dark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <section id="me">
+        <h1>Vadim Chervoniak, Full Stack Developer</h1>
+        <img
+          src="https://avatars.githubusercontent.com/u/183838049?v=4"
+          alt="me"
+        />
+      </section>
+
+      <section id="contacts">
+        <h2 data-label="01">Contacts</h2>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/vadim4web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/vadim4web
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://vadim4web.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                vadim4web.github.io
+              </a>
+            </li>
+            <li>
+              <a href="mailto:vadim4web@gmail.com"> vadim4web@gmail.com </a>
+            </li>
+            <li>
+              <a href="tel:+380-933-789-883"> +380-933-789-883 </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2 data-label="02">About Me</h2>
+        <p>
+          I’m a 37 y/o full-stack developer from Ukraine with focus on Vue,
+          Nuxt, React, Node.js, and a polyglot in modern web technologies.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2 data-label="03">Skills</h2>
+        <ul>
+          <li>
+            <strong>Frontend:</strong> Vue, React, JavaScript/TypeScript, HTML5,
+            CSS3/SCSS
+          </li>
+          <li><strong>Backend:</strong> Nuxt.js, Node.js, PHP, Python</li>
+          <li>
+            <strong>Databases &amp; APIs:</strong> SQL, RESTful APIs, GraphQL
+          </li>
+          <li>
+            <strong>Tools &amp; DevOps:</strong> Git, Bash, NPM, Google Cloud
+            Platform (GCP), AWS
+          </li>
+        </ul>
+      </section>
+
+      <section id="code">
+        <h2 data-label="04">
+          <a
+            href="https://www.codewars.com/kata/reviews/541c8b5e7e4b4c61e2000149/groups/6730adba30786694b28816ab"
+          >
+            Code example
+          </a>
+        </h2>
+        <pre><code class="language-javascript">
+function digitalRoot(n) {
+  // Base case: if n is a single-digit number, return n
+  if (n &lt; 10) {
+    return n;
+  } else {
+    // Calculate the sum of the digits
+    const sum = (n + '').split('').reduce((acc, cur) =&gt; acc + +cur, 0);
+    // Recursive call with the new sum
+    return digitalRoot(sum);
+  }
+}
+      </code></pre>
+      </section>
+
+      <section id="projects">
+        <h2  data-label="05">Projects</h2>
+        <ul>
+          <li>
+            <h3>AddVision.dev</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/vadim4web/addvision"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code</a
+                  >
+              </li>
+              <li>
+                <a
+                  href="https://addvision.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Gouri.com.pl</h3>
+            <ul>
+              <li>
+                <a
+                href="https://github.com/vadim4web/gouri"
+                target="_blank"
+                  rel="noopener noreferrer"
+                  >Code</a
+                >
+              </li>
+              <li>
+                <a
+                    href="https://gouri.com.pl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View</a
+                  >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Flask Calculator App</h3>
+            <ul>
+              <li>
+                <a
+              href="https://github.com/zoyaya17/python1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              ></li>
+              <li>
+                <a
+                href="https://flasc-calc.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View</a
+              ></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2 data-label="06">Education</h2>
+        <p>
+          <code>December 2022 - June 2023</code><br />
+          <strong>Mate academy</strong><br />
+          <em>Full stack Software Development Course</em><br />
+          Focused on JavaScript, HTML, CSS, React, Node.js, and more
+        </p>
+        <p>
+          <code>March 2021 - June 2021</code><br />
+          <strong>EPAM University</strong><br />
+          <em>Front-end Spring Course</em><br />
+          Studied Git, CSS (including Flexbox and Grid), JavaScript, DOM, and
+          Object-Oriented Programming
+        </p>
+        <p>
+          <code>August 2005 - July 2010</code><br />
+          <strong>Chernivtsi National University</strong><br />
+          <em>Department of Applied Physics and Computer Sciences</em><br />
+          Bachelor’s degree in Applied Physics &amp; Computer Science
+        </p>
+      </section>
+
+      <section id="languages">
+        <h2 data-label="07">Languages</h2>
+        <ul>
+          <li data-value="B1">English</li>
+          <li data-value="C2">Ukrainian</li>
+          <li data-value="C1">Russian</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <a
+        href="https://github.com/vadim4web"
+        target="_blank"
+        rel="noopener noreferrer"
+        >@vadim4web</a
+      >
+      <span id="year">2025</span>
+      <a
+        href="https://rs.school/courses/javascript-ru"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="school"
+      >
+        <img
+          src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/a2a648a704a2eee3e2013b9e13bee765ab00f959/tasks/cv/rs-school-logo.svg"
+          alt="rsschool logo"
+        />
+        <span class="visually-hidden"
+          >Visit the Rolling Scopes JavaScript course page</span
+        >
+      </a>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        document.getElementById("year").innerText = new Date().getFullYear();
+      };
+    </script>
+  </body>
+</html>

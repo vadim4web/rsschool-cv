@@ -1,0 +1,217 @@
+@import url('https://fonts.cdnfonts.com/css/konstant-grotesk');
+
+:root {
+  font-family: 'Konstant Grotesk', sans-serif;
+  --silver-sand: #BFC1C2;
+  --coal-black: #161616;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 1fr auto 0.25fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+  "header  header"
+  ". main"
+  "footer footer";
+  background: var(--coal-black);
+  color: white;
+}
+
+header {
+  padding: 2rem;
+}
+
+main,
+footer {
+  padding-inline: 2rem;
+}
+
+body::before {
+  position: fixed;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 100%;
+  aspect-ratio: 1;
+  background: radial-gradient(circle at center, #ff804080, transparent);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: blur(25vw);
+  -webkit-filter: blur(25vw);
+  z-index: -1;
+  min-height: 100dvh;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 0.125rem;
+  background: var(--silver-sand);
+  width: 0;
+  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+h2 {
+  border-bottom:  0.125rem solid var(--silver-sand);
+  position: relative;
+  text-transform: uppercase;
+}
+
+h2::after {
+  position: absolute;
+  right: 0;
+  content: attr(data-label);
+  color: var(--silver-sand);
+  text-align: right;
+}
+
+section {
+  padding-inline: 1rem;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "contacts  me";
+  background: linear-gradient(180deg, var(--coal-black) 50%, transparent);
+}
+
+header #contacts {
+  grid-area: contacts;
+}
+
+header #me {
+  grid-area: me;
+}
+
+#contacts {
+  text-transform: uppercase;
+}
+
+#contacts ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#me {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "name name"
+    ". photo";
+  gap: 1rem;
+}
+
+#me h1 {
+  grid-area: name;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+#me img {
+  grid-area: photo;
+  width: 10rem;
+  height: 10rem;
+  align-self: center;
+  justify-self: center;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#code {
+  filter: invert(1) brightness(1.25) hue-rotate(10deg);
+  -webkit-filter: invert(1) brightness(1.25) hue-rotate(10deg);
+}
+
+#code h2 {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+#code, #code * {
+  background: transparent !important;
+}
+
+#languages ul li {
+  position: relative;
+}
+
+#languages ul li::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: attr(data-value);
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(0deg, var(--coal-black) 50%, transparent);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a.school img {
+  height: 3rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
